@@ -2,6 +2,7 @@
 # https://github.com/six8/pyinstaller-alpine/blob/develop/Dockerfile
 
 FROM python:2.7-alpine3.4
+LABEL maintainer "Ronnie Flathers (@ropnop)"
 # PyInstaller needs zlib-dev, gcc, libc-dev, and musl-dev
 RUN apk --update --no-cache add \
     zlib-dev \

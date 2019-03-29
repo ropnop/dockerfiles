@@ -2,7 +2,7 @@ FROM alpine:latest
 
 # Install base tools
 RUN apk --no-cache update && \
-    apk add curl python py-pip py-crcmod libc6-compat gnupg bash openssh-client git ca-certificates nmap socat bind-tools openssl jq wget gcc libffi-dev musl-dev openssl-dev python-dev make && \
+    apk add curl python py-pip py-crcmod libc6-compat gnupg bash openssh-client git ca-certificates nmap nmap-ncat socat bind-tools openssl jq wget gcc libffi-dev musl-dev openssl-dev python-dev make && \
     rm -rf /var/cache/apk/*
 
 # Install AWS CLI
